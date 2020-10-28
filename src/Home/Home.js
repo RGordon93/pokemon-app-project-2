@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Pokemon = () => {
+
+const Home = () => {
 	return (
 		<div>
-			
+			Pokemon
 		</div>
 	);
 };
 
-export default Pokemon;
+export default Home;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const PokeMoves = () => {
+const Search = () => {
 	return (
 		<div>
-			
+			Search
 		</div>
 	);
 };
 
-export default PokeMoves;
+export default Search;

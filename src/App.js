@@ -4,6 +4,7 @@ import Home from './Home/Home';
 import { Route, Redirect } from 'react-router-dom'; 
 import Nav from './Nav/Nav'
 import Search from './Search/Search';
+import Results from './Results/Results'
 
 
 function App() {

@@ -28,6 +28,7 @@ const Search = () => {
 					<button type='submit'>Submit</button>
 				</label>
 			</form>
+			<Results />
 		</div>
 	);
 };

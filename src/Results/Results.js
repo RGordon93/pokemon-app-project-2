@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 const Results = () => {
+    useEffect(() => {
+        const url = 'https://pokeapi.co/api/v2/pokemon/';
+        fetch(url)
+          .then(res => res.json())
+          .then(console.log)
+          .catch(console.error)
+    }, [])
     return (
 			<div>
 				Results
@@ -10,9 +17,3 @@ const Results = () => {
 };
 
 export default Results;
-
-// const url = '';
-// fetch(url)
-//   .then(res => res.json())
-//   .then(console.log)
-//   .catch(console.error)

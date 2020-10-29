@@ -1,18 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Results from '../Results/Results'
 
 const Search = () => {
-	const initialState = {
-		searchBar: '',
-	};
-	const [formState, setFormState] = useState(initialState);
+	
+	const [filteredResults, setFilteredResults] = useState([]);
+	const [pokeResult, setPokeResult] = useState([]);
+
+	const url = 'https://pokeapi.co/api/v2/pokemon?limit=1050&offset=1/';
+	useEffect(() => {
+		fetch(url)
+			.then((res) => res.json())
+			.then((resJson) => {
+				console.log(resJson);
+				setPokeResult(resJson.results);
+			})
+			.catch(console.error);
+	}, []);
+	
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		console.log(formState);
-		setFormState(initialState);
+		console.log(event.target[0].value)
 	};
 	const handleChange = (event) => {
-		setFormState({ ...formState, [event.target.id]: event.target.value });
+		const filteredArray = pokeResult.filter(result => {
+			return result.name.includes(event.target.value.toLowerCase())
+		})
+		setFilteredResults(filteredArray);
 	};
 	return (
 		<div>
@@ -22,12 +35,11 @@ const Search = () => {
 					<input
 						id='searchBar'
 						onChange={handleChange}
-						value={formState.searchBar}
 					/>
-					<button type='submit'>Submit</button>
+					<button type='submit'>Search Pokemon</button>
 				</label>
 			</form>
-			<Results />
+			<Results pokeResult={pokeResult} filteredResults={filteredResults}/>
 		</div>
 	);
 };

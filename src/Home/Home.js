@@ -1,10 +1,12 @@
 import React from 'react';
-
+ 
 
 const Home = () => {
 	return (
 		<div>
-			Pokemon
+			<h2>Pokemon</h2>
+	
+			
 		</div>
 	);
 };

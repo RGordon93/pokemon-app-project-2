@@ -15,7 +15,6 @@ function App() {
 				<Route path='/home' exact component={Home} />
 				<Route path='/search' component={Search} />
 				<Route path='/' exact render={() => <Redirect to='/home' />} />
-				{/* <Route path='/results' render={<Results />} /> */}
 			</main>
 		</div>
 	);

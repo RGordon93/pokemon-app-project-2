@@ -8,7 +8,7 @@ return (
 			<h1>Pokedex</h1>
             { resultsToDisplay.map((pokemon) => {
                 console.log(pokemon)
-                return <Link to={`/details/${pokemon.name}`} key={pokemon.name}>
+                return <Link className="results"to={`/details/${pokemon.name}`} key={pokemon.name}>
 <h2 key={pokemon.name}>{pokemon.name}</h2>
                 </Link>
 })}

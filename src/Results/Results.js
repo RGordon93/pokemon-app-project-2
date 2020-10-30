@@ -1,14 +1,18 @@
-import React, { useState, useEffect } from 'react';
-
+import React from 'react';
+import { Link } from 'react-router-dom'
 
 const Results = ({ pokeResult, filteredResults }) => {
 const resultsToDisplay = filteredResults.length === 0 ? pokeResult : filteredResults
 return (
 		<div>
-			Results
-            { resultsToDisplay.map((pokemon) => (
-				<h2 key={pokemon.id}>{pokemon.name}</h2>
-			))}
+			<h1>Pokedex</h1>
+            { resultsToDisplay.map((pokemon) => {
+                console.log(pokemon)
+                return <Link to={`/details/${pokemon.name}`} key={pokemon.name}>
+<h2 key={pokemon.name}>{pokemon.name}</h2>
+                </Link>
+})}
+                
 		</div>
 	);
 };

@@ -6,7 +6,7 @@ const Search = () => {
 	const [filteredResults, setFilteredResults] = useState([]);
 	const [pokeResult, setPokeResult] = useState([]);
 
-	const url = 'https://pokeapi.co/api/v2/pokemon?limit=1050&offset=1/';
+	const url = 'https://pokeapi.co/api/v2/pokemon?limit=1050&offset=0/';
 	useEffect(() => {
 		fetch(url)
 			.then((res) => res.json())
@@ -29,14 +29,15 @@ const Search = () => {
 	};
 	return (
 		<div>
-			Search
+			<h3>Search by Keywords</h3>
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='searchBar'>
 					<input
 						id='searchBar'
 						onChange={handleChange}
 					/>
-					<button type='submit'>Search Pokemon</button>
+	     
+        <input type="submit" placeholder="Pokemon Name" value="Search"/>
 				</label>
 			</form>
 			<Results pokeResult={pokeResult} filteredResults={filteredResults}/>

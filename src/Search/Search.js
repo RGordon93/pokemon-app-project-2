@@ -29,7 +29,8 @@ const Search = () => {
 	};
 	return (
 		<div>
-			<h3>Search by Keywords</h3>
+			<br></br>
+			<br></br>
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='searchBar'>
 					<input
@@ -37,7 +38,7 @@ const Search = () => {
 						onChange={handleChange}
 					/>
 	     
-        <input type="submit" placeholder="Pokemon Name" value="Search"/>
+        <input type="submit" value="Filter Search"/>
 				</label>
 			</form>
 			<Results pokeResult={pokeResult} filteredResults={filteredResults}/>

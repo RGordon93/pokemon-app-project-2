@@ -5,8 +5,8 @@ const Nav = () => {
     return (
         <div>
             
-            <Link className="tags" to="/home">Home</Link>
-            <Link className="tags" to="/search">Search</Link>
+            <Link className="tags" to="/home" style={{textDecoration: 'none'}}>Home</Link>
+            <Link className="tags" to="/search" style={{textDecoration:'none'}}>Search</Link>
         </div>
     );
 };

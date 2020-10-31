@@ -38,7 +38,7 @@ const Search = () => {
 						onChange={handleChange}
 					/>
 	     
-        <input type="submit" value="Filter Search"/>
+        <input className="filter"type="submit" value="Filter Search"/>
 				</label>
 			</form>
 			<Results pokeResult={pokeResult} filteredResults={filteredResults}/>

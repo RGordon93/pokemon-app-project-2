@@ -20,8 +20,6 @@ body {
 	font-family: 'Finger Paint';
 	font-size: 50px;
 	color: yellow;
-  /* background-color: #e63946;
-  border: tomato; */
   border-radius: 25px;
 }
 .results {
@@ -30,11 +28,12 @@ body {
 }
 .filter {
   background-color:  red;
-  color: black;
+  /* color:  #3a86ff; */
+  color: white;
   border: red;
   border-radius: 25px;
   font-weight: bold;
-  font-family: 'Finger Paint';
+  font-family: 'Arial Rounded MT Bold';
 }
 .pokeType {
   font-family: 'Arial Rounded MT Bold';
@@ -43,13 +42,18 @@ body {
 .pokeAbilities {
   font-family: 'Arial Rounded MT Bold';
   font-weight: lighter;
+  color: #2b9348;
 }
 .pokeName {
   font-family: 'Finger Paint';
+  color: white;
 }
 .pokeMoves {
   font-family: 'Finger Paint'
 }
 .pokedex {
   font-family: 'Finger Paint';
+}
+.p {
+  color: white;
 }

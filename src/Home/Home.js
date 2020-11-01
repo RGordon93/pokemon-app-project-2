@@ -5,11 +5,13 @@ const Home = () => {
 		<div>
 			<h2 className='title'>Let's Go Poke Moves!</h2>
 			<img src='https://i.pinimg.com/originals/b0/f8/f3/b0f8f32cb74b8aac5cd76ac54ef422f9.png'></img>
-			<p>
+			<p className="p">
 				Welcome to <strong>'Let's Go Poke Moves!'</strong>
 				<br></br>
 				Explore all of the moves any pokemon can learn from Generation I through
-				Generation {} <br></br>
+				Generation VIII {} <br></br>
+				<p>Kanto, Johto, Hoenn, Sinnoh, Unova, Kalos, Alola & Galar (Coming Soon)</p>
+				<br></br>
 				Become a <i>Pokemon Master</i>
 			</p>
 		</div>

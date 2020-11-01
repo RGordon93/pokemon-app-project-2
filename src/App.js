@@ -15,7 +15,7 @@ function App() {
 			<main>
 				<Route path='/home' exact component={Home} />
 				<Route path='/search' component={Search} />
-				<Route path="/details/:pokemon" render = {(routerProps) => <PokeDetails match = {routerProps.match}/>
+				<Route path="/moves/:pokemon" render = {(routerProps) => <PokeDetails match = {routerProps.match}/>
 				} />
 				<Route path='/' exact render={() => <Redirect to='/home' />} />
 			</main>

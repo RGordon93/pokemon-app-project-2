@@ -8,6 +8,7 @@ const Nav = () => {
             <Link className="tags" to="/home" style={{textDecoration: 'none'}}>Home</Link>
             <Link className="tags" to="/search" style={{textDecoration:'none'}}>Search</Link>
         </div>
+        // Worked on the navigation with Ashveer and Kos together
     );
 };
 

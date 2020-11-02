@@ -20,6 +20,7 @@ function App() {
 				<Route path='/' exact render={() => <Redirect to='/home' />} />
 			</main>
 		</div>
+		// Worked together with Ashveer and Kos
 	);
 }
 export default App;

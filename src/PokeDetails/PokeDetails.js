@@ -24,12 +24,14 @@ const PokeDetails = ({ match }) => {
 				return <p className="pokeAbilities" key={abilitiesobj.ability.name}>{abilitiesobj.ability.name}</p>;
 			})}
 			<h3 className='pokeMoves'>
-				{pokeDetail?.name} can learn: <br></br>
+				{pokeDetail?.name} can learn:
+                <br></br>
 				{pokeDetail?.moves.map((moveobj) => {
 					return <li key={moveobj.move.name}>{moveobj.move.name}</li>;
 				})}
 			</h3>
 		</div>
+		// Inspired by the audubon HW 
 	);
 };
 

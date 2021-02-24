@@ -19,7 +19,7 @@ const PokeDetails = ({ match }) => {
 			<h2 className='pokeName'>"{pokeDetail?.name}"</h2>
 			<img src={pokeDetail?.sprites.front_default} />
 			<h3 className='pokeType'>type: {pokeDetail?.types[0].type.name} </h3>
-			{/* <h3 className="pokeAbilities">abilities: {pokeDetail?.abilities[0].ability.name},&nbsp;{pokeDetail?.abilities[1].ability.name}</h3> */}
+			
 			{pokeDetail?.abilities.map((abilitiesobj) => {
 				return <p className="pokeAbilities" key={abilitiesobj.ability.name}>{abilitiesobj.ability.name}</p>;
 			})}

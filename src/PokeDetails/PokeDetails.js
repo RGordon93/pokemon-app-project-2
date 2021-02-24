@@ -31,7 +31,7 @@ const PokeDetails = ({ match }) => {
 				})}
 			</h3>
 		</div>
-		// Inspired by the audubon HW 
+		
 	);
 };
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactPlayer from 'react-player'
+
 
 const Home = () => {
 	return (
 		<div>
 			<h2 className='title'>Let's Go Poke Moves!</h2>
 			<img src='https://i.pinimg.com/originals/b0/f8/f3/b0f8f32cb74b8aac5cd76ac54ef422f9.png'></img>
-			<p className='homepage'>
+			{/* <p className='homepage'>
 				Welcome to <strong>'Let's Go Poke Moves!'</strong>
 				<br></br>
 				Explore all of the moves any pokemon can learn from Generation I through
@@ -18,8 +18,7 @@ const Home = () => {
 				Become a <i>Pokemon Master</i>
 				<br></br>
 				<br></br>
-				<ReactPlayer url='https://www.youtube.com/watch?v=rg6CiPI6h2g' />
-			</p>
+			</p> */}
 			{/* <button className='openModal'>About the Site</button>
 				<div className='modal'>
 					<div className='modal-textbox'>

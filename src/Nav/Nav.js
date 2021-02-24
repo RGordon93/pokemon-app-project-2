@@ -31,11 +31,12 @@ const Nav = () => {
 		<div>
 			<IconContext.Provider value={{ color: 'white' }}>
 				<div className='navbar'>
-					
 					<Link to='#' className='menu-bars'>
 						<FcMenu onClick={showSideBar} />
 					</Link>
+                    <p className='header'style={{color:'white'}}>Let's Go Poke Moves</p>
 				</div>
+                
 				<nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
 					<ul className='nav-menu-items' onClick={showSideBar}>
 						<li className='navbar-toggle'>

@@ -1,11 +1,11 @@
 import React from 'react';
-
+import NukaCarousel from '../NukaCarousel/NukaCarousel'
 
 const Home = () => {
 	return (
 		<div>
 			<h2 className='title'>Let's Go Poke Moves!</h2>
-			<img src='https://i.pinimg.com/originals/b0/f8/f3/b0f8f32cb74b8aac5cd76ac54ef422f9.png'></img>
+			<NukaCarousel />
 			{/* <p className='homepage'>
 				Welcome to <strong>'Let's Go Poke Moves!'</strong>
 				<br></br>

@@ -7,13 +7,13 @@ export const NavDetails = [
 	{
 		title: 'Home',
 		path: '/',
-		icon: <AiFillHome />,
+		// icon: <AiFillHome />,
 		cName: 'nav-text',
 	},
 	{
 		title: 'Search',
 		path: '/search',
-		icon: <AiFillSecurityScan />,
+		// icon: <AiFillSecurityScan />,
 		cName: 'nav-text',
 	},
 	

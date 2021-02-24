@@ -29,6 +29,7 @@ const Search = () => {
 	};
 	return (
 		<div>
+			<h1 style={{color:'white'}}>Search For Pokemon</h1>
 			<br></br>
 			<br></br>
 			<form onSubmit={handleSubmit}>

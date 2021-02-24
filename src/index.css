@@ -18,20 +18,20 @@ body {
   font-weight: bolder;
 }
 .title {
-	font-family: 'Finger Paint';
+	/* font-family: 'Finger Paint'; */
 	font-size: 50px;
 	color: yellow;
   border-radius: 25px;
 }
 .results {
-  font-family: 'Finger Paint';
-  color: black;
+  /* font-family: 'Finger Paint'; */
+  color: white;
 }
 .filter {
-  background-color:  red;
+  background-color: black;
   /* color:  #3a86ff; */
   color: white;
-  border: red;
+  border: black;
   border-radius: 25px;
   font-weight: bold;
   font-family: 'Arial Rounded MT Bold';

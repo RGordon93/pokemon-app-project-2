@@ -51,7 +51,7 @@
 }
 
 .nav-text a:hover {
-	background-color:  purple;
+	background-color:  gray;
 }
 
 .nav-menu-items {
@@ -69,4 +69,7 @@
 }
  span {
   margin-left: 16px;
+}
+.header {
+    padding-left: 20px;
 }
